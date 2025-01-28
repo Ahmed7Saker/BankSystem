@@ -32,8 +32,8 @@ A simple Java-based banking system that allows users to create accounts, log in,
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Ahmed7Saker/BankSystem.git
+   cd BankSystem
 
 
 ### How to Use
@@ -57,14 +57,7 @@ A simple Java-based banking system that allows users to create accounts, log in,
 ### Craeting account and sign up
 ![Screenshot](imgs/Screenshot%202025-01-27%20190550.png)
 
-
-Let me know if you need further adjustments! 😊
-
-This will create a professional and well-structured `README.md` for your banking system project. Let me know if you need further assistance!
-
 ## Folder Structure
-
-The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
