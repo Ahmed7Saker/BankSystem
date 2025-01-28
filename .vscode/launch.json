@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "Main_e0b85ab0"
+      },
+      {
+        "type": "java",
+        "name": "B",
+        "request": "launch",
+        "mainClass": "B",
+        "projectName": "Main_e0b85ab0"
+      },
+      {
+        "type": "java",
+        "name": "Launch JavaFX",
+        "request": "launch",
+        "mainClass": "App",
+        "vmArgs": "--module-path \"C:\\java\\javafx-sdk-23.0.2\\lib\" --add-modules javafx.controls,javafx.fxml",
+        "projectName": "Main_e0b85ab0"
+      }
+    ]
+  }
+  
