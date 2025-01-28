@@ -10,7 +10,6 @@ A simple Java-based banking system that allows users to create accounts, log in,
 - [Classes Overview](#classes-overview)
 - [Contributing](#contributing)
 - [License](#license)
-
 ## Features
 
 ### User Features
@@ -58,13 +57,17 @@ A simple Java-based banking system that allows users to create accounts, log in,
 ![Screenshot](imgs/Screenshot%202025-01-27%20190550.png)
 
 ## Folder Structure
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Project Structure
+ -  CopyBankSystem/
+ -  ├── src/         # Source files
+  - ├── lib/         # Dependencies
+  - ├── bin/         # Compiled files
+  - └── imgs/        # Application screenshots
+  - Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 ## Dependencies
 - JavaFX (for GUI)
+- JDBC (for database connectivity)
+- Additional dependencies are managed in the `lib ` folder
 
 ## Contributing
 1. Fork the repository.
@@ -72,6 +75,50 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 3. Make your changes and commit them (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
+
+## Classes Overview
+The banking system is structured into several key classes:
+
+### **Account**
+The `Account` class represents a user's bank account and holds information like the account holder's name, balance, and transaction history. It includes methods for:
+- **Deposit**: Adds money to the account balance.
+- **Withdrawal**: Removes money from the account balance, ensuring sufficient funds.
+- **Transfer**: Transfers money from this account to another account.
+- **Check balance**: Displays the current account balance.
+- **Change password**: Allows users to update their account password.
+- **Account Creation**: Allows users to create a new account and link it to their user profile.
+
+
+### **Customer**
+The `Customer` class manages the basic information of each user, including:
+- **Login credentials**: Stores the username and password of the user.
+- **Account creation**: Allows users to create a new account and link it to their user profile.
+- **Personal details**: Manages other user details such as name, address, and contact information.
+
+
+### **Admin**
+The `Admin` class handles administrative tasks such as:
+- **Admin login**: Allows admins to log into the admin panel using special credentials.
+- **View customer accounts**: Admins can view details of all registered customer accounts.
+- **Remove customers**: Admins have the ability to remove a customer and their associated account from the system.
+- **Find account by ID**: Admins can search for specific accounts using the account ID.
+### **Bank**
+The `Bank` class manages the overall functionality of the banking system, including:
+- **View customer accounts**: Admins can view details of all registered customer accounts.
+- **Remove customers**: Admins have the ability to remove a customer and their associated account from the system.
+- **Find account by ID**: Admins can search for specific accounts using the account ID.
+### **Bank**
+
+### **Main**
+The `Main` class acts as the main control center for the system, providing the menu for both users and admins to interact with the system. It includes:
+- **Menu navigation**: Displays options for users and admins to choose actions such as creating an account, logging in, and managing accounts.
+- **System control**: Handles the logic flow of the application, directing users and admins to the relevant features.
+
+### **App**
+The `App` class serves as the entry point for the application. It initializes the system and starts the main menu, allowing users to choose between user and admin modes with simple gui using javaFX.
+### License
+-This project is open source and available under standard open source terms.
+
 
 <!-- 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
