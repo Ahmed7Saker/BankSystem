@@ -107,7 +107,6 @@ The `Bank` class manages the overall functionality of the banking system, includ
 - **View customer accounts**: Admins can view details of all registered customer accounts.
 - **Remove customers**: Admins have the ability to remove a customer and their associated account from the system.
 - **Find account by ID**: Admins can search for specific accounts using the account ID.
-### **Bank**
 
 ### **Main**
 The `Main` class acts as the main control center for the system, providing the menu for both users and admins to interact with the system. It includes:
